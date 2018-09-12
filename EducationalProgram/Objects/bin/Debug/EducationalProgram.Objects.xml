@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EducationalProgram.Objects</name>
+    </assembly>
+    <members>
+        <member name="T:IIS.EducationalProgram.EduProgram">
+            <summary>
+            EduProgram.
+            </summary>
+        </member>
+        <member name="P:IIS.EducationalProgram.EduProgram.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="P:IIS.EducationalProgram.EduProgram.Description">
+            <summary>
+            Description.
+            </summary>
+        </member>
+        <member name="P:IIS.EducationalProgram.EduProgram.Number">
+            <summary>
+            Number.
+            </summary>
+        </member>
+        <member name="P:IIS.EducationalProgram.EduProgram.Semestr">
+            <summary>
+            мастеровая ссылка на шапку IIS.EducationalProgram.Semestr.
+            </summary>
+        </member>
+        <member name="T:IIS.EducationalProgram.EduProgram.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.EducationalProgram.EduProgram.Views.EduProgramD">
+            <summary>
+            "EduProgramD" view.
+            </summary>
+        </member>
+        <member name="P:IIS.EducationalProgram.EduProgram.Views.EduProgramE">
+            <summary>
+            "EduProgramE" view.
+            </summary>
+        </member>
+        <member name="T:IIS.EducationalProgram.DetailArrayOfEduProgram">
+            <summary>
+            Detail array of EduProgram.
+            </summary>
+        </member>
+        <member name="M:IIS.EducationalProgram.DetailArrayOfEduProgram.#ctor(IIS.EducationalProgram.Semestr)">
+            <summary>
+            Construct detail array.
+            </summary>
+            <summary>
+            Returns object with type EduProgram by index.
+            </summary>
+            <summary>
+            Adds object with type EduProgram.
+            </summary>
+        </member>
+        <member name="T:IIS.EducationalProgram.Semestr">
+            <summary>
+            Semestr.
+            </summary>
+        </member>
+        <member name="P:IIS.EducationalProgram.Semestr.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="P:IIS.EducationalProgram.Semestr.Description">
+            <summary>
+            Description.
+            </summary>
+        </member>
+        <member name="P:IIS.EducationalProgram.Semestr.DateBegin">
+            <summary>
+            DateBegin.
+            </summary>
+        </member>
+        <member name="P:IIS.EducationalProgram.Semestr.DateEnd">
+            <summary>
+            DateEnd.
+            </summary>
+        </member>
+        <member name="P:IIS.EducationalProgram.Semestr.Eps">
+            <summary>
+            Semestr.
+            </summary>
+        </member>
+        <member name="T:IIS.EducationalProgram.Semestr.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.EducationalProgram.Semestr.Views.SemestrE">
+            <summary>
+            "SemestrE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.EducationalProgram.Semestr.Views.SemestrL">
+            <summary>
+            "SemestrL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.EducationalProgram.Contract">
+            <summary>
+            Contract.
+            </summary>
+        </member>
+        <member name="P:IIS.EducationalProgram.Contract.Description">
+            <summary>
+            Description.
+            </summary>
+        </member>
+        <member name="P:IIS.EducationalProgram.Contract.Priorities">
+            <summary>
+            Priorities.
+            </summary>
+        </member>
+        <member name="P:IIS.EducationalProgram.Contract.Number">
+            <summary>
+            Number.
+            </summary>
+        </member>
+        <member name="T:IIS.EducationalProgram.Contract.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.EducationalProgram.Contract.Views.ContractE">
+            <summary>
+            "ContractE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.EducationalProgram.Contract.Views.ContractL">
+            <summary>
+            "ContractL" view.
+            </summary>
+        </member>
+    </members>
+</doc>

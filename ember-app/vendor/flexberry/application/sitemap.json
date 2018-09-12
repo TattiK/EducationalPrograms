@@ -1,0 +1,29 @@
+﻿{
+  "applicationCaption": "Educational programs",
+  "applicationTitle": "Educational programs",
+  "items": [
+    {
+      "link": null,
+      "menuName": "образовательные-программы",
+      "caption": "Образовательные программы",
+      "title": "Образовательные программы",
+      "children": [
+        {
+          "link": "i-i-s-educational-program-semestr-l",
+          "menuName": null,
+          "caption": "Список семестров",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-educational-program-contract-l",
+          "menuName": null,
+          "caption": "Список контрактов",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

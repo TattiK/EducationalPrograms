@@ -1,0 +1,93 @@
+﻿{
+  "name": "IISEducationalProgramEduProgram",
+  "modelName": "i-i-s-educational-program-edu-program",
+  "className": "EduProgram",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "tString100",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "flexberryType": "tText",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "number",
+      "type": "string",
+      "flexberryType": "tString100",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "semestr",
+      "relatedTo": "i-i-s-educational-program-semestr",
+      "inverse": "eps"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "EduProgramD",
+      "modelName": "i-i-s-educational-program-edu-program",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Название образовательной программы",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "description",
+          "caption": "Описание",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "EduProgramE",
+      "modelName": "i-i-s-educational-program-edu-program",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "number",
+          "caption": "Number",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true
+}

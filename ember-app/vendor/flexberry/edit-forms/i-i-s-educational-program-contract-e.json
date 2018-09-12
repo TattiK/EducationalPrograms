@@ -1,0 +1,13 @@
+﻿{
+  "propertyLookup": [],
+  "caption": "Контракт",
+  "name": "IISEducationalProgramContractE",
+  "className": "ContractE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-educational-program-contract",
+      "modelProjection": "ContractE"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "newForm": "i-i-s-educational-program-semestr-e",
+  "editForm": "i-i-s-educational-program-semestr-e",
+  "caption": "Список семестров",
+  "name": "IISEducationalProgramSemestrL",
+  "className": "SemestrL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-educational-program-semestr",
+      "modelProjection": "SemestrL"
+    }
+  ]
+}

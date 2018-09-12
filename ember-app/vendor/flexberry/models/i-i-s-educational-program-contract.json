@@ -1,0 +1,79 @@
+﻿{
+  "name": "IISEducationalProgramContract",
+  "modelName": "i-i-s-educational-program-contract",
+  "className": "Contract",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "description",
+      "type": "string",
+      "flexberryType": "tText",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "priorities",
+      "type": "string",
+      "flexberryType": "tText",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "number",
+      "type": "string",
+      "flexberryType": "tString7",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ContractE",
+      "modelName": "i-i-s-educational-program-contract",
+      "attrs": [
+        {
+          "name": "number",
+          "caption": "Номер договора",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "description",
+          "caption": "Описание контракта",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ContractL",
+      "modelName": "i-i-s-educational-program-contract",
+      "attrs": [
+        {
+          "name": "number",
+          "caption": "Номер договора",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "description",
+          "caption": "Описание контракта",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true
+}

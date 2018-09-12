@@ -1,0 +1,94 @@
+<h3 class="ui header">{{t 'forms.i-i-s-educational-program-semestr-e.caption'}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=model.errors}}
+    </div>
+  </div>
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button type="submit" class="ui button save-button" {{action 'save'}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button type="submit" class="ui button save-del-button" {{action 'delete'}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button type="submit" class="ui button close-button" {{action 'close'}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=readonly
+    required=true
+    value=model.name
+    class=(if model.errors.name 'error' '')
+    label=(t 'forms.i-i-s-educational-program-semestr-e.name-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.name pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=readonly
+    required=true
+    value=model.description
+    class=(if model.errors.description 'error' '')
+    label=(t 'forms.i-i-s-educational-program-semestr-e.description-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.description pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.i-i-s-educational-program-semestr-e.dateBegin-caption'}}</label>
+  {{
+    flexberry-simpledatetime
+    placeholder=(t 'components.flexberry-datepicker.placeholder')
+    readonly=readonly
+    value=model.dateBegin
+    type='date'
+    class=(if model.errors.dateBegin 'error' '')
+  }}
+  {{flexberry-validationmessage error=model.errors.dateBegin pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.i-i-s-educational-program-semestr-e.dateEnd-caption'}}</label>
+  {{
+    flexberry-simpledatetime
+    placeholder=(t 'components.flexberry-datepicker.placeholder')
+    readonly=readonly
+    value=model.dateEnd
+    type='date'
+    class=(if model.errors.dateEnd 'error' '')
+  }}
+  {{flexberry-validationmessage error=model.errors.dateEnd pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.i-i-s-educational-program-semestr-e.eps-caption'}}</label>
+  {{
+    flexberry-groupedit
+    componentName="epsGroupEdit"
+    mainModelProjection=modelProjection
+    modelProjection=modelProjection.attributes.eps
+    content=model.eps
+    readonly=readonly
+    orderable=false
+    class=(if model.errors.eps 'error' '')
+  }}
+  {{flexberry-validationmessage error=model.errors.eps pointing="pointing"}}
+</div>
+
+</form>

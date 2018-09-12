@@ -1,0 +1,107 @@
+﻿{
+  "name": "IISEducationalProgramSemestr",
+  "modelName": "i-i-s-educational-program-semestr",
+  "className": "Semestr",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "tString100",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "flexberryType": "tText",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "dateBegin",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "dateEnd",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "eps",
+      "relatedTo": "i-i-s-educational-program-edu-program",
+      "inverse": "semestr"
+    }
+  ],
+  "projections": [
+    {
+      "name": "SemestrE",
+      "modelName": "i-i-s-educational-program-semestr",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Название семестра",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "description",
+          "caption": "Описание",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "dateBegin",
+          "caption": "Дата начала",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "dateEnd",
+          "caption": "Дата конца",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "EduProgramD",
+          "caption": "Образовательные программы",
+          "name": "eps",
+          "relatedTo": "i-i-s-educational-program-edu-program",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "SemestrL",
+      "modelName": "i-i-s-educational-program-semestr",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Название семестра",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true
+}

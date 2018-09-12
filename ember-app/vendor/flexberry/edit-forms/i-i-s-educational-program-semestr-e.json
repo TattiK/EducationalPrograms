@@ -1,0 +1,13 @@
+﻿{
+  "propertyLookup": [],
+  "caption": "Семестр",
+  "name": "IISEducationalProgramSemestrE",
+  "className": "SemestrE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-educational-program-semestr",
+      "modelProjection": "SemestrE"
+    }
+  ]
+}

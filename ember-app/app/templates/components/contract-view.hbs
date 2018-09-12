@@ -1,0 +1,16 @@
+<div class="contract_view">
+<h1>{{semestr.name}}</h1>
+<h2 class='description'>{{semestr.description}}</h2>
+<p class='description'>Дата начала: {{format-date date=semestr.dateBegin}}</p>
+<p class='description'>Дата конца: {{format-date date=semestr.dateEnd}}</p>
+
+{{#sortable-objects sortableObjectList=semestr.eps enableSort=true }}
+  {{#each semestr.eps as |item|}}
+    {{#draggable-object content=item overrideClass='inline texting' isSortable=true }}
+      {{item.name}}
+    {{/draggable-object}}
+  {{/each}}
+{{/sortable-objects}}
+
+<button  class="button" {{action 'saveSem'}}>Сохранить</button>
+</div>

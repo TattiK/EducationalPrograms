@@ -1,0 +1,14 @@
+﻿{
+  "newForm": "i-i-s-educational-program-contract-e",
+  "editForm": "i-i-s-educational-program-contract-e",
+  "caption": "Список контрактов",
+  "name": "IISEducationalProgramContractL",
+  "className": "ContractL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-educational-program-contract",
+      "modelProjection": "ContractL"
+    }
+  ]
+}

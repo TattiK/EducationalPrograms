@@ -1,0 +1,14 @@
+
+{{#if showSemestrs}}
+{{else}}
+<p class="beggining">
+Введите номер контракта </p>
+{{input type="text" value=contractNumber placeholder="Номер контракта"}}
+<button class="button" {{action "checkContractNumber"}}>Проверить</button>
+{{/if}}
+{{#if showSemestrs}}
+<p><p class="description">Информация о Вашем контракте:</p>{{inputContract.description}}</p>
+{{#each model.semestrs as |semestr|}} {{contract-view semestr=semestr contract=inputContract}} {{/each}}
+{{/if}}
+
+
