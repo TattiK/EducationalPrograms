@@ -7,7 +7,7 @@ export default Ember.Controller.extend({
     return {
       nodes: [
         {
-          link: 'index',
+          link: 'SelectPriorities',
           caption: i18n.t('forms.application.sitemap.index.caption'),
           title: i18n.t('forms.application.sitemap.index.title'),
           children: null
@@ -26,7 +26,7 @@ export default Ember.Controller.extend({
             title: i18n.t('forms.application.sitemap.образовательные-программы.i-i-s-educational-program-contract-l.title'),
             children: null
           }]
-        }
+        },
       ]
     };
   }),

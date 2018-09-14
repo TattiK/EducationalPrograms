@@ -8,13 +8,7 @@ export let Model = Ember.Mixin.create({
   getValidations: function () {
     let parentValidations = this._super();
     let thisValidations = {
-     /* 'model.number': {
-        presence: {
-          'if': function(object, validator) {
-            return (object.match(/^[1-9]{2}[a-zA-Z]{3}[1-9]{2}$/)) ? true : false;
-          }
-        }
-      }*/
+
     };
     return Ember.$.extend(true, {}, parentValidations, thisValidations);
   },
