@@ -1,3 +1,3 @@
 export default {
-  caption: 'IISEducationalProgramSemestrL'
+  caption: 'Semestr list'
 };

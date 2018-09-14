@@ -19,7 +19,7 @@ Ember.$.extend(true, translations, {
     'i-i-s-educational-program-semestr': IISEducationalProgramSemestrModel,
   },
 
-  'application-name': 'Application caption',
+  'application-name': 'Educational programs',
 
   forms: {
     loading: {
@@ -59,7 +59,7 @@ Ember.$.extend(true, translations, {
       },
 
       footer: {
-        'application-name': 'Application caption',
+        'application-name': 'Educational programs',
         'application-version': {
           caption: 'Addon version {{version}}',
           title: 'It is version of ember-flexberry addon, which uses in this dummy application ' +
@@ -70,8 +70,8 @@ Ember.$.extend(true, translations, {
 
       sitemap: {
         'application-name': {
-          caption: 'Application caption',
-          title: 'Application title'
+          caption: 'Educational programs',
+          title: 'Educational programs'
         },
         'application-version': {
           caption: 'Addon version {{version}}',
@@ -84,15 +84,15 @@ Ember.$.extend(true, translations, {
           title: ''
         },
         'образовательные-программы': {
-          caption: 'образовательные-программы',
-          title: 'образовательные-программы',
+          caption: 'Educational programs',
+          title: 'Educational programs',
           'i-i-s-educational-program-semestr-l': {
-            caption: 'i-i-s-educational-program-semestr-l',
-            title: 'i-i-s-educational-program-semestr-l'
+            caption: 'Semestr list',
+            title: 'Semestr list'
           },
           'i-i-s-educational-program-contract-l': {
-            caption: 'i-i-s-educational-program-contract-l',
-            title: 'i-i-s-educational-program-contract-l'
+            caption: 'Contract list',
+            title: 'Contract list'
           }
         },
       }

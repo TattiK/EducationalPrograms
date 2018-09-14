@@ -1,3 +1,3 @@
 export default {
-  caption: 'IISEducationalProgramContractL'
+  caption: 'Contract list'
 };

@@ -62,6 +62,7 @@ namespace IIS.EducationalProgram
         // *** Start programmer edit section *** (Semestr.Name CustomAttributes)
 
         // *** End programmer edit section *** (Semestr.Name CustomAttributes)
+        [NotNull()]
         public virtual string Name
         {
             get
@@ -93,6 +94,7 @@ namespace IIS.EducationalProgram
         // *** Start programmer edit section *** (Semestr.Description CustomAttributes)
 
         // *** End programmer edit section *** (Semestr.Description CustomAttributes)
+        [NotNull()]
         public virtual string Description
         {
             get
@@ -124,6 +126,7 @@ namespace IIS.EducationalProgram
         // *** Start programmer edit section *** (Semestr.DateBegin CustomAttributes)
 
         // *** End programmer edit section *** (Semestr.DateBegin CustomAttributes)
+        [NotNull()]
         public virtual System.DateTime DateBegin
         {
             get
@@ -155,6 +158,7 @@ namespace IIS.EducationalProgram
         // *** Start programmer edit section *** (Semestr.DateEnd CustomAttributes)
 
         // *** End programmer edit section *** (Semestr.DateEnd CustomAttributes)
+        [NotNull()]
         public virtual System.DateTime DateEnd
         {
             get

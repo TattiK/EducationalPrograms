@@ -8,7 +8,8 @@ export let Model = Ember.Mixin.create({
   getValidations: function () {
     let parentValidations = this._super();
     let thisValidations = {
-
+      description: { presence: true },
+      number: { presence: true }
     };
     return Ember.$.extend(true, {}, parentValidations, thisValidations);
   },

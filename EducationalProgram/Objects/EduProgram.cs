@@ -32,10 +32,6 @@ namespace IIS.EducationalProgram
     [View("EduProgramD", new string[] {
             "Name as \'Название образовательной программы\'",
             "Description as \'Описание\'"})]
-    [View("EduProgramE", new string[] {
-            "Name as \'Name\'",
-            "Description as \'Description\'",
-            "Number as \'Number\'"})]
     public class EduProgram : ICSSoft.STORMNET.DataObject
     {
         
@@ -56,6 +52,7 @@ namespace IIS.EducationalProgram
         // *** Start programmer edit section *** (EduProgram.Name CustomAttributes)
 
         // *** End programmer edit section *** (EduProgram.Name CustomAttributes)
+        [NotNull()]
         public virtual string Name
         {
             get
@@ -87,6 +84,7 @@ namespace IIS.EducationalProgram
         // *** Start programmer edit section *** (EduProgram.Description CustomAttributes)
 
         // *** End programmer edit section *** (EduProgram.Description CustomAttributes)
+        [NotNull()]
         public virtual string Description
         {
             get
@@ -109,30 +107,6 @@ namespace IIS.EducationalProgram
                 // *** Start programmer edit section *** (EduProgram.Description Set end)
 
                 // *** End programmer edit section *** (EduProgram.Description Set end)
-            }
-        }
-        
-        /// <summary>
-        /// Number.
-        /// </summary>
-        // *** Start programmer edit section *** (EduProgram.Number CustomAttributes)
-
-        // *** End programmer edit section *** (EduProgram.Number CustomAttributes)
-        [ICSSoft.STORMNET.NotStored()]
-        public virtual string Number
-        {
-            get
-            {
-                // *** Start programmer edit section *** (EduProgram.Number Get)
-
-                return null;
-                // *** End programmer edit section *** (EduProgram.Number Get)
-            }
-            set
-            {
-                // *** Start programmer edit section *** (EduProgram.Number Set)
-
-                // *** End programmer edit section *** (EduProgram.Number Set)
             }
         }
         
@@ -185,17 +159,6 @@ namespace IIS.EducationalProgram
                 get
                 {
                     return ICSSoft.STORMNET.Information.GetView("EduProgramD", typeof(IIS.EducationalProgram.EduProgram));
-                }
-            }
-            
-            /// <summary>
-            /// "EduProgramE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View EduProgramE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("EduProgramE", typeof(IIS.EducationalProgram.EduProgram));
                 }
             }
         }

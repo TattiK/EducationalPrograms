@@ -55,6 +55,7 @@ namespace IIS.EducationalProgram
         // *** Start programmer edit section *** (Contract.Description CustomAttributes)
 
         // *** End programmer edit section *** (Contract.Description CustomAttributes)
+        [NotNull()]
         public virtual string Description
         {
             get
@@ -117,6 +118,7 @@ namespace IIS.EducationalProgram
         // *** Start programmer edit section *** (Contract.Number CustomAttributes)
 
         // *** End programmer edit section *** (Contract.Number CustomAttributes)
+        [NotNull()]
         public virtual string Number
         {
             get

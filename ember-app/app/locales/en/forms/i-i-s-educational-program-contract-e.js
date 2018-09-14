@@ -1,5 +1,5 @@
 export default {
-  caption: 'IISEducationalProgramContractE',
-  'number-caption': 'number',
-  'description-caption': 'description'
+  caption: 'Contract edit form',
+  'number-caption': 'Number',
+  'description-caption': 'Description'
 };

@@ -19,7 +19,7 @@ Ember.$.extend(true, translations, {
     'i-i-s-educational-program-semestr': IISEducationalProgramSemestrModel,
   },
 
-  'application-name': 'Educational programs',
+  'application-name': 'Образовательные программы',
 
   forms: {
     loading: {
@@ -59,7 +59,7 @@ Ember.$.extend(true, translations, {
       },
 
       footer: {
-        'application-name': 'Educational programs',
+        'application-name': 'Образовательные программы',
         'application-version': {
           caption: 'Версия аддона {{version}}',
           title: 'Это версия аддона ember-flexberry, которая сейчас используется в этом тестовом приложении ' +
@@ -70,8 +70,8 @@ Ember.$.extend(true, translations, {
 
       sitemap: {
         'application-name': {
-          caption: 'Educational programs',
-          title: 'Educational programs'
+          caption: 'Образовательные программы',
+          title: 'Образовательные программы'
         },
         'application-version': {
           caption: 'Версия аддона {{version}}',

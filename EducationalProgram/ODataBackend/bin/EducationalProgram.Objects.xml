@@ -19,11 +19,6 @@
             Description.
             </summary>
         </member>
-        <member name="P:IIS.EducationalProgram.EduProgram.Number">
-            <summary>
-            Number.
-            </summary>
-        </member>
         <member name="P:IIS.EducationalProgram.EduProgram.Semestr">
             <summary>
             мастеровая ссылка на шапку IIS.EducationalProgram.Semestr.
@@ -37,11 +32,6 @@
         <member name="P:IIS.EducationalProgram.EduProgram.Views.EduProgramD">
             <summary>
             "EduProgramD" view.
-            </summary>
-        </member>
-        <member name="P:IIS.EducationalProgram.EduProgram.Views.EduProgramE">
-            <summary>
-            "EduProgramE" view.
             </summary>
         </member>
         <member name="T:IIS.EducationalProgram.DetailArrayOfEduProgram">

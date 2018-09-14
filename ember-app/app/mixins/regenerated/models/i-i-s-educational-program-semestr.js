@@ -10,6 +10,10 @@ export let Model = Ember.Mixin.create({
   getValidations: function () {
     let parentValidations = this._super();
     let thisValidations = {
+      name: { presence: true },
+      description: { presence: true },
+      dateBegin: { datetime: true },
+      dateEnd: { datetime: true }
     };
     return Ember.$.extend(true, {}, parentValidations, thisValidations);
   },
