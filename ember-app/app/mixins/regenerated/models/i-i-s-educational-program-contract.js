@@ -21,7 +21,8 @@ export let Model = Ember.Mixin.create({
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ContractE', 'i-i-s-educational-program-contract', {
     number: Projection.attr('Номер договора'),
-    description: Projection.attr('Описание контракта')
+    description: Projection.attr('Описание контракта'),
+    priorities: Projection.attr('Приоритеты'),
   });
   modelClass.defineProjection('ContractL', 'i-i-s-educational-program-contract', {
     number: Projection.attr('Номер договора'),
